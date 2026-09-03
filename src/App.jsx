@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
+import Certificates from './components/Certificates';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Hero />} />
             <Route path="/projects" element={<Projects />} />
-            {/* Certificates පිටුව අපි ඊළඟට මෙතනට දාමු */}
+            <Route path="/certificates" element={<Certificates />} />
           </Routes>
         </div>
       </div>
