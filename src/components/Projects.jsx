@@ -37,6 +37,15 @@ const Projects = () => {
       Figma: "https://www.figma.com/design/DNNaWDyiH197xLIPdOgBDw/ElderShield?node-id=0-1&t=87ABUsaGSeVIWwtt-1",
       live: "#",
       img: "https://placehold.co/600x400/e2e8f0/475569?text=Project+3"
+    },
+    {
+      id: 5,
+      title: "E-commerce Website",
+      desc: "Personal portfolio website with beautiful animations and clean UI.",
+      tech: ["HTML", "CSS", "JavaScript"],
+      GitHub: "https://github.com/Deshan-D/E-commerce-Website.git",
+      live: "#",
+      img: "https://placehold.co/600x400/e2e8f0/475569?text=Project+3"
     }
   ];
 
