@@ -12,49 +12,49 @@ const Certificates = () => {
       title: "Python for Beginner",
       issuer: "University of Moratuwa",
       date: "2024",
-      img: "cert02.png"
+      img: "/My-Portfolio-Website/cert02.png"
     },
     {
       id: 3,
       title: "Getting Started with Cisco Packet Tracer",
       issuer: "Cisco Networking Academy",
       date: "2026",
-      img: "cert03.png"
+      img: "/My-Portfolio-Website/cert03.png"
     },
     {
       id: 4,
       title: "Exploring Networking with Cisco Packet Tracer",
       issuer: "Cisco Networking Academy",
       date: "2026",
-      img: "cert04.png"
+      img: "/My-Portfolio-Website/cert04.png"
     },
     {
       id: 5,
       title: "Introduction to Cybersecurity",
       issuer: "Cisco Networking Academy",
       date: "2026",
-      img: "cert05.png"
+      img: "/My-Portfolio-Website/cert05.png"
     },
     {
       id: 6,
       title: "Introduction to Data Science",
       issuer: "Cisco Networking Academy",
       date: "2026",
-      img: "cert06.png"
+      img: "/My-Portfolio-Website/cert06.png"
     },
     {
       id: 7,
       title: "Eco Pen Article Competition",
       issuer: "Zero Plastic Community of Sabaragamuwa University of Sri Lanka",
       date: "2025",
-      img: "cert07.png"
+      img: "/My-Portfolio-Website/cert07.png"
     },
     {
       id: 8,
       title: "SLIOT Challenge 2026",
       issuer: "University of Moratuwa & SLT-Mobitel",
       date: "2026",
-      img: "cert08.png"
+      img: "/My-Portfolio-Website/cert08.png"
     }
   ];
 

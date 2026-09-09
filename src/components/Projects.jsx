@@ -17,7 +17,7 @@ const Projects = () => {
       desc: "Health related mobile app design and frontend implementation.",
       tech: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/Deshan-D/webApplication.git",
-      live: "#",
+      live: "https://deshan-d.github.io/webApplication/",
       img: "https://placehold.co/600x400/e2e8f0/475569?text=Project+2"
     },
     {
