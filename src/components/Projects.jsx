@@ -1,4 +1,4 @@
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaFigma } from 'react-icons/fa';
 
 const Projects = () => {
   const projectList = [
@@ -34,18 +34,18 @@ const Projects = () => {
       title: "Eldershield",
       desc: "Personal portfolio website with beautiful animations and clean UI.",
       tech: ["Figma"],
-      Figma: "https://www.figma.com/design/DNNaWDyiH197xLIPdOgBDw/ElderShield?node-id=0-1&t=87ABUsaGSeVIWwtt-1",
+      figma: "https://www.figma.com/design/DNNaWDyiH197xLIPdOgBDw/ElderShield?node-id=0-1&t=87ABUsaGSeVIWwtt-1",
       live: "#",
-      img: "https://placehold.co/600x400/e2e8f0/475569?text=Project+3"
+      img: "https://placehold.co/600x400/e2e8f0/475569?text=Project+4"
     },
     {
       id: 5,
       title: "E-commerce Website",
       desc: "Personal portfolio website with beautiful animations and clean UI.",
       tech: ["HTML", "CSS", "JavaScript"],
-      GitHub: "https://github.com/Deshan-D/E-commerce-Website.git",
-      live: "#",
-      img: "https://placehold.co/600x400/e2e8f0/475569?text=Project+3"
+      github: "https://github.com/Deshan-D/E-commerce-Website.git",
+      live: "https://e-commerce-website-deshan6.vercel.app/",
+      img: "https://placehold.co/600x400/e2e8f0/475569?text=Project+5"
     }
   ];
 
@@ -76,12 +76,36 @@ const Projects = () => {
               </div>
               
               <div className="flex gap-3">
-                <a href={project.live} className="flex-1 bg-teal-600 text-white text-center py-2 rounded-lg text-sm font-bold hover:bg-teal-700 transition flex items-center justify-center gap-2">
+                {/* Live Button */}
+                <a 
+                  href={project.live} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex-1 bg-teal-600 text-white text-center py-2 rounded-lg text-sm font-bold hover:bg-teal-700 transition flex items-center justify-center gap-2"
+                >
                   <FaExternalLinkAlt /> VIEW LIVE
                 </a>
-                <a href={project.github} className="flex-1 border-2 border-slate-800 text-slate-800 text-center py-2 rounded-lg text-sm font-bold hover:bg-slate-800 hover:text-white transition flex items-center justify-center gap-2">
-                  <FaGithub /> GITHUB
-                </a>
+
+                {/* Conditional Rendering: Figma link or github link button */}
+                {project.figma ? (
+                  <a 
+                    href={project.figma} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-1 border-2 border-[#F24E1E] text-[#F24E1E] text-center py-2 rounded-lg text-sm font-bold hover:bg-[#F24E1E] hover:text-white transition flex items-center justify-center gap-2"
+                  >
+                    <FaFigma /> FIGMA
+                  </a>
+                ) : (
+                  <a 
+                    href={project.github} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-1 border-2 border-slate-800 text-slate-800 text-center py-2 rounded-lg text-sm font-bold hover:bg-slate-800 hover:text-white transition flex items-center justify-center gap-2"
+                  >
+                    <FaGithub /> GITHUB
+                  </a>
+                )}
               </div>
             </div>
           </div>
