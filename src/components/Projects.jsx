@@ -26,7 +26,7 @@ const Projects = () => {
       desc: "Personal portfolio website with beautiful animations and clean UI.",
       tech: ["ReactJS", "Figma", "TailwindCSS"],
       github: "https://github.com/Deshan-D/My-Portfolio-Website.git",
-      live: "#",
+      live: "https://deshan-d.github.io/My-Portfolio-Website/",
       img: "https://placehold.co/600x400/e2e8f0/475569?text=Project+3"
     },
     {
