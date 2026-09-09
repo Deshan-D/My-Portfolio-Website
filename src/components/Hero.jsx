@@ -57,7 +57,7 @@ const Hero = () => {
       <div className="md:w-5/12 mt-12 md:mt-0 flex justify-center">
         <div className="w-80 h-96 bg-slate-200 rounded-3xl overflow-hidden shadow-xl border-8 border-white">
           <img 
-            src="profile.png" 
+            src="/My-Portfolio-Website/profile.png" 
             alt="Deshan Disanayaka" 
             className="w-full h-full object-cover"
           />
