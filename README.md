@@ -6,8 +6,11 @@ Built with **React**, **Vite**, and **Tailwind CSS**, this portfolio features a 
 ✨ **Features**
 
 **Multi-Page Layout**: Seamless navigation between Home, Projects, and Certificates pages using react-router-dom.
+
 **Dynamic Hero Section**: Introduces who I am, tools I use, and links to my social media profiles.
-**Smart CV Handler**: Advanced dropdown menu allowing users to view or download specific versions of my CV (e.g., UI/UX Design CV vs. Software Engineering CV) directly from the browser.
+
+**Smart CV Handler**: Advanced dropdown menu allowing users to view or download specific versions of my CV (e.g., UI/UX Design CV vs. Project Management CV) directly from the browser.
+
 **Project Showcase**: A dedicated projects gallery featuring:
 
 
