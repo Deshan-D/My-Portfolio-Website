@@ -1,16 +1,39 @@
-# React + Vite
+👨‍💻 **Deshan's Personal Portfolio**
+A professional, responsive, and modern personal portfolio website designed to showcase my skills, projects, and professional certificates as a UI/UX Designer and Frontend Developer.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Built with **React**, **Vite**, and **Tailwind CSS**, this portfolio features a clean UI, smooth navigation, and a highly interactive experience.
 
-Currently, two official plugins are available:
+✨ **Features**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Multi-Page Layout**: Seamless navigation between Home, Projects, and Certificates pages using react-router-dom.
 
-## React Compiler
+**Dynamic Hero Section**: Introduces who I am, tools I use, and links to my social media profiles.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Smart CV Handler**: Advanced dropdown menu allowing users to view or download specific versions of my CV (e.g., UI/UX Design CV vs. Project Management CV) directly from the browser.
 
-## Expanding the ESLint configuration
+**Project Showcase**: A dedicated projects gallery featuring:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+🛠️ **Tech Stack**
+
+**Framework**: React 18
+**Build Tool**: Vite
+**Styling**: Tailwind CSS
+**Routing**: React Router DOM
+**Icons**: React Icons (FontAwesome, Simple Icons, VSCode Icons, DevIcons)
+
+🚀 **Getting Started**
+Follow these instructions to get a copy of the project up and running on your local machine.
+
+**Prerequisites**
+Make sure you have Node.js installed on your machine.
+
+**Installation**
+
+Clone the repository: _git clone https://github.com/Deshan-D/My-Portfolio-Website.git_
+Navigate into the project directory: _cd My-Portfolio-Website_
+Install dependencies: _npm install_
+
+Start the development server: _npm run dev_
+
+Open your browser and visit https://deshan-d.github.io/My-Portfolio-Website/ to view the portfolio.
