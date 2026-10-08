@@ -5,8 +5,8 @@ import { DiIntellij } from 'react-icons/di';
 import { SiPostman } from 'react-icons/si';
 
 const Hero = () => {
-  const [showDropdown, setShowDropdown] = useState(false);
-  
+  const [showViewDropdown, setShowViewDropdown] = useState(false);
+  const [showDownloadDropdown, setShowDownloadDropdown] = useState(false);
   
   const baseUrl = import.meta.env.BASE_URL;
 
@@ -23,52 +23,81 @@ const Hero = () => {
           I am a professional UI/UX Designer and Frontend Developer. I specialize in taking complex problems and turning them into beautiful, user-friendly digital experiences.
         </p>
 
-        {/* CV Buttons (View & Download Dropdown) */}
+        {/* CV Buttons (View & Download Dropdowns) */}
         <div className="flex flex-wrap gap-4 mb-10">
           
-          <a 
-            href={`${baseUrl}ui-ux-cv.pdf`} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="bg-teal-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-teal-700 transition shadow-md flex items-center gap-2"
-          >
-            <FaEye className="text-xl" /> VIEW CV
-          </a>
-
-          {/* Dropdown Button Container */}
+          {/* VIEW CV Dropdown Container */}
           <div className="relative">
             <button 
-              onClick={() => setShowDropdown(!showDropdown)}
+              onClick={() => {
+                setShowViewDropdown(!showViewDropdown);
+                setShowDownloadDropdown(false);
+              }}
+              className="bg-teal-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-teal-700 transition shadow-md flex items-center gap-2"
+            >
+              <FaEye className="text-xl" /> VIEW CV <FaChevronDown className="text-sm ml-1" />
+            </button>
+
+            {/* View CV - Dropdown Menu */}
+            {showViewDropdown && (
+              <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-slate-200 rounded-xl shadow-xl overflow-hidden z-10">
+                <a 
+                  href={`${baseUrl}ui-ux-cv.pdf`} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="block px-4 py-3 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-700 transition border-b border-slate-100"
+                  onClick={() => setShowViewDropdown(false)}
+                >
+                  UI/UX Design CV
+                </a>
+                <a 
+                  href={`${baseUrl}pm-cv.pdf`} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="block px-4 py-3 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-700 transition"
+                  onClick={() => setShowViewDropdown(false)}
+                >
+                  Project Management CV
+                </a>
+              </div>
+            )}
+          </div>
+
+          {/* DOWNLOAD CV Dropdown Container */}
+          <div className="relative">
+            <button 
+              onClick={() => {
+                setShowDownloadDropdown(!showDownloadDropdown);
+                setShowViewDropdown(false);
+              }}
               className="border-2 border-slate-900 text-slate-900 px-6 py-3 rounded-xl font-bold hover:bg-slate-900 hover:text-white transition shadow-md flex items-center gap-2"
             >
               <FaDownload className="text-xl" /> DOWNLOAD CV <FaChevronDown className="text-sm ml-1" />
             </button>
 
-            {/* Dropdown Menu */}
-            {showDropdown && (
+            {/* Download CV - Dropdown Menu */}
+            {showDownloadDropdown && (
               <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-slate-200 rounded-xl shadow-xl overflow-hidden z-10">
-                
                 <a 
                   href={`${baseUrl}ui-ux-cv.pdf`} 
                   download="Deshan_UIUX_CV.pdf" 
                   className="block px-4 py-3 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-700 transition border-b border-slate-100"
-                  onClick={() => setShowDropdown(false)}
+                  onClick={() => setShowDownloadDropdown(false)}
                 >
                   UI/UX Design CV
                 </a>
-
                 <a 
-                  href={`${baseUrl}se-cv.pdf`} 
-                  download="Deshan_SE_CV.pdf" 
+                  href={`${baseUrl}pm-cv.pdf`} 
+                  download="Deshan_PM_CV.pdf" 
                   className="block px-4 py-3 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-700 transition"
-                  onClick={() => setShowDropdown(false)}
+                  onClick={() => setShowDownloadDropdown(false)}
                 >
-                  Software Engineering CV
+                  Project Management CV
                 </a>
-                
               </div>
             )}
           </div>
+
         </div>
         
         {/* Tools & Skills */}
