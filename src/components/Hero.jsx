@@ -1,22 +1,42 @@
-import { FaLinkedin, FaGithub, FaMedium, FaEnvelope, FaFigma, FaPalette, FaJira } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaMedium, FaEnvelope, FaFigma, FaPalette, FaJira, FaDownload, FaEye } from 'react-icons/fa';
 import { VscVscode } from 'react-icons/vsc';
 import { DiIntellij } from 'react-icons/di';
 import { SiPostman } from 'react-icons/si';
 
 const Hero = () => {
+  const baseUrl = import.meta.env.BASE_URL;
+
   return (
     <section className="flex flex-col md:flex-row items-center justify-between px-10 py-16 bg-white shadow-sm rounded-xl mx-4 mt-6">
       
-      {/* Left Side: Details */}
       <div className="md:w-1/2">
         <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
           I'm Deshan. Crafting Digital <br/> Experiences with Purpose.
         </h1>
         
         <h2 className="text-2xl font-bold text-slate-800 mt-8 mb-3">About Me</h2>
-        <p className="text-slate-600 leading-relaxed mb-8 text-lg">
+        <p className="text-slate-600 leading-relaxed mb-6 text-lg">
           I am a professional UI/UX Designer and Frontend Developer. I specialize in taking complex problems and turning them into beautiful, user-friendly digital experiences.
         </p>
+
+        {/* CV Buttons (View & Download) */}
+        <div className="flex flex-wrap gap-4 mb-10">
+          <a 
+            href={`${baseUrl}cv.pdf`} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="bg-teal-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-teal-700 transition shadow-md flex items-center gap-2"
+          >
+            <FaEye className="text-xl" /> VIEW CV
+          </a>
+          <a 
+            href={`${baseUrl}cv.pdf`} 
+            download="Deshan_CV.pdf" 
+            className="border-2 border-slate-900 text-slate-900 px-6 py-3 rounded-xl font-bold hover:bg-slate-900 hover:text-white transition shadow-md flex items-center gap-2"
+          >
+            <FaDownload className="text-xl" /> DOWNLOAD CV
+          </a>
+        </div>
         
         {/* Tools & Skills */}
         <div className="mb-10">
@@ -37,15 +57,12 @@ const Hero = () => {
           <h3 className="text-xl font-bold text-slate-800 mb-2">Let's Connect</h3>
           <p className="text-sm text-slate-500 mb-4 uppercase tracking-wider font-semibold">Reach out & view my work</p>
           <div className="flex gap-4">
-            {/* LinkedIn */}
             <a href="#" className="bg-[#0077b5] text-white p-3 rounded-xl text-3xl hover:bg-blue-700 transition shadow-md" title="LinkedIn">
               <FaLinkedin />
             </a>
-            {/* Email */}
             <a href="mailto:your.email@example.com" className="bg-[#EA4335] text-white p-3 rounded-xl text-3xl hover:bg-red-600 transition shadow-md" title="Email">
               <FaEnvelope />
             </a>
-            {/* Medium */}
             <a href="#" className="bg-black text-white p-3 rounded-xl text-3xl hover:bg-gray-800 transition shadow-md" title="Medium">
               <FaMedium />
             </a>
@@ -53,12 +70,11 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Right Side: Image */}
       <div className="md:w-5/12 mt-12 md:mt-0 flex justify-center">
         <div className="w-80 h-96 bg-slate-200 rounded-3xl overflow-hidden shadow-xl border-8 border-white">
           <img 
-            src="/My-Portfolio-Website/profile.png" 
-            alt="Deshan Disanayaka" 
+            src={`${baseUrl}profile.png`} 
+            alt="Deshan" 
             className="w-full h-full object-cover"
           />
         </div>
