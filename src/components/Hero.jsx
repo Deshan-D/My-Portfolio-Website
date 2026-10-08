@@ -59,6 +59,24 @@ const Hero = () => {
                 >
                   Project Management CV
                 </a>
+                <a 
+                  href={`${baseUrl}network-cv.pdf`} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="block px-4 py-3 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-700 transition border-b border-slate-100"
+                  onClick={() => setShowViewDropdown(false)}
+                >
+                  Network CV
+                </a>
+                <a 
+                  href={`${baseUrl}qa-cv.pdf`} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="block px-4 py-3 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-700 transition"
+                  onClick={() => setShowViewDropdown(false)}
+                >
+                  QA CV
+                </a>
               </div>
             )}
           </div>
@@ -93,6 +111,22 @@ const Hero = () => {
                   onClick={() => setShowDownloadDropdown(false)}
                 >
                   Project Management CV
+                </a>
+                <a 
+                  href={`${baseUrl}network-cv.pdf`} 
+                  download="Deshan_Network_CV.pdf" 
+                  className="block px-4 py-3 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-700 transition border-b border-slate-100"
+                  onClick={() => setShowDownloadDropdown(false)}
+                >
+                  Network CV
+                </a>
+                <a 
+                  href={`${baseUrl}qa-cv.pdf`} 
+                  download="Deshan_QA_CV.pdf" 
+                  className="block px-4 py-3 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-700 transition"
+                  onClick={() => setShowDownloadDropdown(false)}
+                >
+                  QA CV
                 </a>
               </div>
             )}
