@@ -153,13 +153,13 @@ const Hero = () => {
           <h3 className="text-xl font-bold text-slate-800 mb-2">Let's Connect</h3>
           <p className="text-sm text-slate-500 mb-4 uppercase tracking-wider font-semibold">Reach out & view my work</p>
           <div className="flex gap-4">
-            <a href="#" className="bg-[#0077b5] text-white p-3 rounded-xl text-3xl hover:bg-blue-700 transition shadow-md" title="LinkedIn">
+            <a href="www.linkedin.com/in/deshan-disanayaka-038baa288" className="bg-[#0077b5] text-white p-3 rounded-xl text-3xl hover:bg-blue-700 transition shadow-md" title="LinkedIn">
               <FaLinkedin />
             </a>
             <a href="mailto:your.email@example.com" className="bg-[#EA4335] text-white p-3 rounded-xl text-3xl hover:bg-red-600 transition shadow-md" title="Email">
               <FaEnvelope />
             </a>
-            <a href="#" className="bg-black text-white p-3 rounded-xl text-3xl hover:bg-gray-800 transition shadow-md" title="Medium">
+            <a href="https://medium.com/@deshanpavithra921" className="bg-black text-white p-3 rounded-xl text-3xl hover:bg-gray-800 transition shadow-md" title="Medium">
               <FaMedium />
             </a>
           </div>
