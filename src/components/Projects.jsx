@@ -5,7 +5,7 @@ const Projects = () => {
     {
       id: 1,
       title: "TraffiX",
-      desc: "A professional UI/UX design and frontend for agricultural ecommerce platforms.",
+      desc: "AI-powered traffic monitoring system.",
       tech: ["NextJS", "Python", "TailwindCSS"],
       github: "https://github.com/Deshan-D/Capstone-Project.git",
       live: "#",
@@ -14,7 +14,7 @@ const Projects = () => {
     {
       id: 2,
       title: "Wildvine",
-      desc: "Health related mobile app design and frontend implementation.",
+      desc: "An informational application about Red List endangered animals.",
       tech: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/Deshan-D/webApplication.git",
       live: "https://deshan-d.github.io/webApplication/",
@@ -23,7 +23,7 @@ const Projects = () => {
     {
       id: 3,
       title: "Portfolio Website",
-      desc: "Personal portfolio website with beautiful animations and clean UI.",
+      desc: "A personal portfolio website showcasing my professional skills, knowledge, and achievements.",
       tech: ["ReactJS", "Figma", "TailwindCSS"],
       github: "https://github.com/Deshan-D/My-Portfolio-Website.git",
       live: "https://deshan-d.github.io/My-Portfolio-Website/",
@@ -32,7 +32,7 @@ const Projects = () => {
     {
       id: 4,
       title: "Eldershield",
-      desc: "Personal portfolio website with beautiful animations and clean UI.",
+      desc: "A smart digital skills growing app designed to educate and empower elderly persons.",
       tech: ["Figma"],
       figma: "https://www.figma.com/design/DNNaWDyiH197xLIPdOgBDw/ElderShield?node-id=0-1&t=87ABUsaGSeVIWwtt-1",
       live: "#",
@@ -41,7 +41,7 @@ const Projects = () => {
     {
       id: 5,
       title: "E-commerce Website",
-      desc: "Personal portfolio website with beautiful animations and clean UI.",
+      desc: "An e-commerce platform featuring item selection and add-to-cart functionality.",
       tech: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/Deshan-D/E-commerce-Website.git",
       live: "https://e-commerce-website-deshan6.vercel.app/",
