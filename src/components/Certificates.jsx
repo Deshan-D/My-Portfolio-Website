@@ -58,6 +58,13 @@ const Certificates = () => {
       issuer: "University of Moratuwa & SLT-Mobitel",
       date: "2026",
       img: "/My-Portfolio-Website/cert08.png"
+    },
+    {
+      id: 9,
+      title: "Introduction to Modern AI",
+      issuer: "Cisco Networking Academy",
+      date: "2026",
+      img: "/My-Portfolio-Website/cert09.png"
     }
   ]);
 
