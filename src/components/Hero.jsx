@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaLinkedin, FaGithub, FaMedium, FaEnvelope, FaFigma, FaPalette, FaJira, FaDownload, FaEye, FaChevronDown } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaMedium, FaEnvelope, FaFigma, FaPalette, FaTrello, FaDownload, FaEye, FaChevronDown } from 'react-icons/fa';
 import { VscVscode } from 'react-icons/vsc';
 import { DiIntellij } from 'react-icons/di';
 import { SiPostman } from 'react-icons/si';
@@ -140,7 +140,7 @@ const Hero = () => {
           <div className="flex flex-wrap gap-5 text-4xl">
             <FaFigma className="text-[#F24E1E] hover:scale-110 transition-transform cursor-pointer" title="Figma" />
             <FaPalette className="text-[#00C4CC] hover:scale-110 transition-transform cursor-pointer" title="Canva" />
-            <FaJira className="text-[#0052CC] hover:scale-110 transition-transform cursor-pointer" title="Jira" />
+            <FaTrello className="text-[#0079BF] hover:scale-110 transition-transform cursor-pointer" title="Trello" />
             <VscVscode className="text-[#007ACC] hover:scale-110 transition-transform cursor-pointer" title="VS Code" />
             <DiIntellij className="text-[#FE315D] hover:scale-110 transition-transform cursor-pointer" title="IntelliJ IDEA" />
             <SiPostman className="text-[#FF6C37] hover:scale-110 transition-transform cursor-pointer" title="Postman" />
