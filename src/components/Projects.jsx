@@ -47,6 +47,15 @@ const Projects = () => {
       github: "https://github.com/Deshan-D/E-commerce-Website.git",
       live: "#",
       img: "https://placehold.co/600x400/e2e8f0/475569?text=Project+5"
+    },
+    {
+      id: 6,
+      title: "Weather App",
+      desc: "A simple weather application displaying current conditions and forecasts.",
+      tech: ["HTML", "CSS", "JavaScript"],
+      github: "https://github.com/Deshan-D/weather-app.git",
+      live: "https://weather-app-deshan6.vercel.app/",
+      img: "https://placehold.co/600x400/e2e8f0/475569?text=Project+6"
     }
   ]);
 
