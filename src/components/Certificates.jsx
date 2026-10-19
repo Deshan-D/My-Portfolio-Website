@@ -65,6 +65,27 @@ const Certificates = () => {
       issuer: "Cisco Networking Academy",
       date: "2026",
       img: "/My-Portfolio-Website/cert09.png"
+    },
+    {
+      id: 10,
+      title: "Introduction to Project Management with ClickUp",
+      issuer: "Coursera",
+      date: "2026",
+      img: "/My-Portfolio-Website/cert10.jpg"
+    },
+    {
+      id: 11,
+      title: "ArtistryX - AI Digital Art Competition",
+      issuer: "IEEE Student Branch of Sabaragamuwa University of Sri Lanka",
+      date: "2026",
+      img: "/My-Portfolio-Website/cert11.png"
+    },
+    {
+      id: 12,
+      title: "Participation for Microsoft Student Ambasssadors Workshop",
+      issuer: "Ms. Jithmi Wikramasinghe - Microsoft Student Ambassadors",
+      date: "2026",
+      img: "/My-Portfolio-Website/cert12.png"
     }
   ]);
 
