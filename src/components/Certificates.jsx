@@ -86,6 +86,13 @@ const Certificates = () => {
       issuer: "Ms. Jithmi Wikramasinghe - Microsoft Student Ambassadors",
       date: "2026",
       img: "/My-Portfolio-Website/cert12.png"
+    },
+    {
+      id: 1,
+      title: "Basics of Microsoft Power BI",
+      issuer: "Uniathena",
+      date: "2026",
+      img: "/My-Portfolio-Website/cert13.jpg"
     }
   ]);
 
