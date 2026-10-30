@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaGithub, FaExternalLinkAlt, FaFigma, FaTimes } from 'react-icons/fa'; // FaTimes අලුතින් එකතු කළා
+import { FaGithub, FaExternalLinkAlt, FaFigma, FaTimes } from 'react-icons/fa';
 
 const Projects = () => {
   const [projects, setProjects] = useState([
@@ -10,7 +10,7 @@ const Projects = () => {
       tech: ["NextJS", "Python", "TailwindCSS"],
       github: "https://github.com/Deshan-D/Capstone-Project.git",
       live: "#",
-      img: "https://placehold.co/600x400/e2e8f0/475569?text=Project+1"
+      img: "pr1.jpg"
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ const Projects = () => {
       tech: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/Deshan-D/webApplication.git",
       live: "#",
-      img: "https://placehold.co/600x400/e2e8f0/475569?text=Project+2"
+      img: "pr2.jpg"
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ const Projects = () => {
       tech: ["ReactJS", "Figma", "TailwindCSS"],
       github: "https://github.com/Deshan-D/My-Portfolio-Website.git",
       live: "#",
-      img: "https://placehold.co/600x400/e2e8f0/475569?text=Project+3"
+      img: "pr3.jpg"
     },
     {
       id: 4,
@@ -37,7 +37,7 @@ const Projects = () => {
       tech: ["Figma"],
       figma: "https://www.figma.com/design/DNNaWDyiH197xLIPdOgBDw/ElderShield?node-id=0-1&t=87ABUsaGSeVIWwtt-1",
       live: "#",
-      img: "https://placehold.co/600x400/e2e8f0/475569?text=Project+4"
+      img: "pr4.jpg"
     },
     {
       id: 5,
@@ -46,7 +46,7 @@ const Projects = () => {
       tech: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/Deshan-D/E-commerce-Website.git",
       live: "#",
-      img: "https://placehold.co/600x400/e2e8f0/475569?text=Project+5"
+      img: "pr5.jpg"
     },
     {
       id: 6,
@@ -55,7 +55,7 @@ const Projects = () => {
       tech: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/Deshan-D/weather-app.git",
       live: "https://weather-app-deshan6.vercel.app/",
-      img: "https://placehold.co/600x400/e2e8f0/475569?text=Project+6"
+      img: "pr6.jpg"
     }
   ]);
 
