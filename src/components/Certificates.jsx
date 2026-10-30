@@ -88,11 +88,18 @@ const Certificates = () => {
       img: "/My-Portfolio-Website/cert12.png"
     },
     {
-      id: 1,
+      id: 13,
       title: "Basics of Microsoft Power BI",
       issuer: "Uniathena",
       date: "2026",
       img: "/My-Portfolio-Website/cert13.jpg"
+    },
+    {
+      id: 14,
+      title: "Certificate for DHACK'26 Designathon challenge ",
+      issuer: "University of Sri Jayewardenepura",
+      date: "2026",
+      img: "/My-Portfolio-Website/cert14.jpg"
     }
   ]);
 
